@@ -3684,6 +3684,8 @@ static int ext4_end_io_dio(struct kiocb *iocb, loff_t offset,
 		size = 0;
 	}
 	io_end_vec = ext4_alloc_io_end_vec(io_end);
+	if (IS_ERR(io_end_vec))
+		return PTR_ERR(io_end_vec);
 	io_end_vec->offset = offset;
 	io_end_vec->size = size;
 	ext4_put_io_end(io_end);
