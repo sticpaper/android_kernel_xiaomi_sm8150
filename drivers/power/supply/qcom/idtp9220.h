@@ -1,11 +1,5 @@
 /**
- * @file   idtp9220.h
- * @author  <roy@ROY-PC>
- * @date   Sun Nov 22 11:49:55 2015
- *
- * @brief
- *
- *
+ * idtp9220.h
  */
 #ifndef __IDTP9220_H__
 #define __IDTP9220_H__

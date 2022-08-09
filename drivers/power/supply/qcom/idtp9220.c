@@ -1,5 +1,5 @@
 /**
- * Copyright “Copyright (C) 2018 XiaoMi, Inc
+ * Copyright (C) 2018 XiaoMi, Inc
  */
 
 #include <linux/module.h>
@@ -10,9 +10,6 @@
 #include <linux/i2c.h>
 #include <linux/workqueue.h>
 #include <linux/sysfs.h>
-#include <asm/unaligned.h>
-/*add for sdm845 request*/
-#include <idtp9220.h>
 #include <linux/regmap.h>
 #include <linux/spinlock.h>
 #include <linux/of_gpio.h>
@@ -20,6 +17,8 @@
 #include <linux/irq.h>
 #include <linux/interrupt.h>
 #include <linux/power_supply.h>
+#include <asm/unaligned.h>
+#include <idtp9220.h>
 
 /*
 #ifdef CONFIG_DRM
