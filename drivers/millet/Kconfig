@@ -1,0 +1,5 @@
+config MILLET
+	bool "frozen framework"
+	default y
+	---help---
+	  Mi frozen function
