@@ -900,6 +900,9 @@ static void loop_update_rotational(struct loop_device *lo)
 		queue_flag_set_unlocked(QUEUE_FLAG_NONROT, q);
 	else
 		queue_flag_clear_unlocked(QUEUE_FLAG_NONROT, q);
+
+	/* add: iostat on loop device is disabled by default */
+	queue_flag_clear_unlocked(QUEUE_FLAG_IO_STAT, q);
 }
 
 static int loop_set_fd(struct loop_device *lo, fmode_t mode,
